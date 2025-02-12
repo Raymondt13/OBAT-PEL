@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Obat Pel</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/Logo.jpg" alt="logo" >
+                <h1>MOCOBOMB</h1>
+            </div>
+            <div class="other">
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1000"><a href="index.html">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="Pricelist.html  ">Pricelist</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Contact.html">Contact</a></div>
+                </div>
+                <div class="icons">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="fa-solid fa-bag-shopping"></i></div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="Pricelist.html">Pricelist</a></div>
+                <div class="link"><a href="Contact.html">Contact</a></div>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <h1 data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="900">MOCOBOMB <span></span></h1>
+            <hr class="fir-line" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+            <hr class="sec-line" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100">
+            <p data-aos="zoom-out" data-aos-duration="1200" data-aos-delay="1200">MocoBomb merupakan produk sabun pel daur ulang dari minyak jelantah yang dibentuk menjadi bath bomb. Produk kami mempunyai solusi kreatif untuk mengolah limbah minyak bekas yang sering dianggap sebagai sampah.</p>
+            <div class="btn" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1300"><button>Know More</button></div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:1});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)"
+        }
+
+        function cancel(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)"
+        }
+
+
+    </script>
+</body>
+</html>

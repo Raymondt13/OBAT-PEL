@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Aroma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('img/latar3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        nav {
+            width: 100%;
+            background-color: #333;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        h3 {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .aroma-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: left;
+            font-weight: bold;
+        }
+        .aroma-section div {
+            width: 48%;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .aroma-section h2 {
+            color: black
+
+        }
+        .aroma-section p {
+            color: black;
+            line-height: 1.5;
+            text-align: justify;
+            font-weight: bold;
+        }
+        .image-container {
+            max-width: 300px;
+            text-align: right;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="Pricelist.html">Pricelist</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Cek harga dulu, belanja kemudian!</h1>
+        <h3>Price list lengkap ada di sini. Mulai dari 30K! Pilih aroma favoritmu dan rasakan sensasinya.</h3>
+        <br>
+        <br>
+        <div class="aroma-section">
+            <div>
+                <h2>Lily of the Valley</h2>
+                <p>Aroma ini menghadirkan sentuhan floral yang manis, namun tidak menyengat, dengan nuansa hijau segar yang mengingatkan pada embun pagi. Aromanya memberikan kesan murni dan elegan, membawa perasaan tenang dan menenangkan, seolah membawa Anda ke taman bunga yang lembut dan damai.</p>
+            </div>
+            <div>
+                <h2>Cheese Cake</h2>
+                <p>Menghadirkan sentuhan manis yang lembut dan menggoda, mengingatkan pada kelezatan dessert klasik namun tetap ringan. Aroma keju creamy berpadu dengan nuansa gula dan vanila, menciptakan harmoni yang menyenangkan tanpa berlebihan. Hasilnya, ruangan terasa bersih dan dipenuhi kehangatan aroma yang mengundang senyum.</p>
+            </div>
+            <div>
+                <h2>Cookie Dough</h2>
+                <p>Wangi vanila yang lembut berpadu dengan sentuhan karamel dan sedikit rempah, menciptakan suasana yang cozy dan menyenangkan di dalam ruangan. Saat digunakan akan meninggalkan aroma yang menggoda, membuat ruangan terasa lebih hangat, nyaman, dan penuh harmoni.</p>
+            </div>
+        </div>
+    </div>
+    
+    <button class="back-button" ><a href="index.html">Back</a></button>
+</body>
+</html>
